@@ -1,5 +1,7 @@
 # Robuste Kaiplatzplanung: Puffer oder Information? – Streamlit-Demo
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-robuste-kaiplatz-demo.streamlit.app/)**
+
 Interaktive Fall-Demo zur **Kaiplatzplanung bei unpünktlichen Schiffen**: Die Kaiplatz-Zuteilung (`berth-allocation-demo`) geht davon aus, dass alle Schiffe
 zur Fahrplan-Ankunft da sind. Hier kommen sie später, und die Wartezeit zählt ab der **tatsächlichen** Ankunft. Die Demo stellt zwei Antworten gegeneinander:
 **Reserve im Plan** (Puffer) oder **Wissen im Betrieb** (Neuplanung, mit einer Prognose der Restverspätung sogar besser), und beantwortet die Frage:
