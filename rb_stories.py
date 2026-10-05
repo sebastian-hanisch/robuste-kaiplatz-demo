@@ -14,7 +14,7 @@ def criteria(name, rel):
     if name == "Pünktlich":
         return [(puf <= -5, f"Puffer >= 5 % teurer als starr: {puf:+.1f} %"), (abs(neu) <= 3, f"Neuplanung innerhalb +-3 % von starr: {neu:+.1f} %")]
     if name == "Leichte Verspätung":
-        return [(puf <= 0.5, f"Puffer nicht besser als starr: {puf:+.1f} %"), (neu <= 10, f"Neuplanung hoechstens 10 % besser: {neu:+.1f} %")]
+        return [(puf <= 0.5, f"Puffer nicht besser als starr: {puf:+.1f} %"), (neu <= 10, f"Neuplanung höchstens 10 % besser als starr:{neu:+.1f} %")]
     if name == "Große Verspätung":
         return [(neu >= 15, f"Neuplanung >= 15 % besser: {neu:+.1f} %"), (prog >= 30, f"mit Prognose >= 30 % besser: {prog:+.1f} %")]
     if name == "Ausreißer":
