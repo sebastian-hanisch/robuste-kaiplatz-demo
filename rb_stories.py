@@ -1,4 +1,4 @@
-"""Abnahmekriterien der Presets (Plan, Abschnitt 7): Welche Geschichte erzählt jedes Beispielszenario, und woran erkennt man, dass sie trägt?
+"""Abnahmekriterien der Presets (Plan, Abschnitt 7): Welche Geschichte erzählt jedes Beispielszenario, und woran erkennt man, dass sie gilt?
 
 Einzige Quelle für `tools/tune_presets.py` (Abstimmung) und `tests/test_preset_stories.py` (Abnahme). Gain-Angaben `rel` sind Prozent der Kosten des
 starren Plans (Mittel je Schiff), positiv = die Strategie ist besser als starr."""

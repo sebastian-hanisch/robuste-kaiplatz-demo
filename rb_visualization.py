@@ -170,7 +170,7 @@ def distribution_figure(dists):
 
 
 def gain_figure(dists):
-    """Median-Gewinn neben Mittel-Gewinn je Strategie (Gesamtkosten je Szenario): ist der Mittelwert viel größer, tragen wenige Szenarien den Gewinn."""
+    """Median-Gewinn neben Mittel-Gewinn je Strategie (Gesamtkosten je Szenario): ist der Mittelwert viel größer, stammt der Gewinn aus wenigen Szenarien."""
     import plotly.graph_objects as go
 
     labels = [C.STRATEGY_SHORT[d.key] for d in dists]

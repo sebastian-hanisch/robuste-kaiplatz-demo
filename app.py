@@ -267,7 +267,7 @@ with dcol2:
 st.caption(
     f"Basis: {C.FOCUS_INSTANCES} Flotten (Seeds 0-{C.FOCUS_INSTANCES - 1}) x {C.FOCUS_DRAWS} Verspätungs-Ziehungen mit Ihren Hafen- und Verspätungseinstellungen - "
     "nicht Ihr aktueller Seed. Gleich heißt: Unterschied höchstens eine halbe gewichtete Wartestunde. Liegt der Median weit unter dem Mittelwert, "
-    "tragen wenige Szenarien den Gewinn."
+    "stammt der Gewinn aus wenigen Szenarien."
 )
 
 st.markdown("##### Kostenkurve über die mittlere Verspätung")
@@ -392,7 +392,7 @@ Dazu das **Hellsehen** (Tab "Exakt"): der beste Plan bei Kenntnis aller tatsäch
 Strecke dazwischen = Verspätung, gepunktete Linie = Wartezeit bis zum Anlegen.
 
 **Warum ein Einzelfall vom Mittelwert abweicht.** Die Gewinne der Neuplanung sind **schief verteilt**: In vielen Szenarien ändert sich wenig, in wenigen sehr viel. Der Mittelwert wird von diesen
-wenigen getragen, der Median ist das typische Szenario, und in einem Teil der Szenarien ist die Neuplanung sogar **schlechter** als der starre Plan (sie optimiert jeweils mit dem, was sie
+wenigen bestimmt, der Median ist das typische Szenario, und in einem Teil der Szenarien ist die Neuplanung sogar **schlechter** als der starre Plan (sie optimiert jeweils mit dem, was sie
 weiß, und kann sich dadurch später verbauen). Deshalb zeigt der Kernabschnitt die Verteilung und nennt einen Unterschied nur dann klar, wenn er mehr als zwei Standardfehler beträgt.
 
 **Warum die Kosten des Hellsehens mit der Verspätung sinken.** Gezählt wird nur die Wartezeit im Hafen ab tatsächlicher Ankunft. Verspätete Ankünfte entzerren den Kai, also wartet man

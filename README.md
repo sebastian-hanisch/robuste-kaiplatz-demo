@@ -14,7 +14,7 @@ Teil des Portfolios für die Website „Sebastian Hanisch – Operations Researc
 
 Ein Kaiplan ist immer ein Plan auf Fahrplan-Ankünften, und die Wirklichkeit weicht ab. Zwei klassische Antworten: **Lücken lassen** (Puffer) oder **neu planen**, sobald
 man mehr weiß. Der Puffer hat einen sicheren Preis (Wartezeit auch bei pünktlichen Schiffen), einen unsicheren Nutzen; die Neuplanung hat keinen Lückenpreis, nutzt aber nur, was
-schon bekannt ist. Die Demo misst beides auf denselben Verspätungen und zeigt die **Verteilung** der Gewinne, denn sie sind schief: Der Mittelwert wird von wenigen Szenarien getragen,
+schon bekannt ist. Die Demo misst beides auf denselben Verspätungen und zeigt die **Verteilung** der Gewinne, denn sie sind schief: Der Mittelwert wird von wenigen Szenarien bestimmt,
 und in jedem fünften verliert die Neuplanung sogar gegen den starren Plan.
 
 ## Modell
