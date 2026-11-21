@@ -100,10 +100,10 @@ entspricht (Median-Gewinn 4 von 160 Gesamtkosten gegen ein Mittel von etwa 21). 
 
 `python -m pytest tests/ -v` – 307 Tests, rund 4 Minuten. Zusammensetzung:
 
-- **Kern:** Rechts-Verschiebung gegen ein **unabhängiges Kontrollmodell** (stundenweise Ereignissimulation statt Vorgängerschleife); jede ausgeführte Belegung besteht `check_feasible` gegen die
+- **Kern:** Rechts-Verschiebung gegen ein **unabhängiges Kontrollmodell** (stundenweise ereignisdiskrete Simulation statt Vorgängerschleife); jede ausgeführte Belegung besteht `check_feasible` gegen die
   tatsächlichen Ankünfte; Invarianten je Neuplanungs-Ereignis (liegende Schiffe unverändert, Hindernisse respektiert, nichts in die Vergangenheit); `replan_fast` liefert bei 0, 1, 2, 5 und 40 Suchzügen
   exakt dasselbe wie die Referenz; feste Werte der Vorab-Messreihe (288 Einzelvergleiche ohne Abweichung).
-- **Orakel (`test_oracle_rb.py`):** Hellsehen gegen vollständige Aufzählung aller Reihenfolgen und Positionen (Mini-Instanzen), Strategien nie besser als das Optimum, Rechts-Verschiebung gegen eine stundenweise Ereignissimulation.
+- **Orakel (`test_oracle_rb.py`):** Hellsehen gegen vollständige Aufzählung aller Reihenfolgen und Positionen (Mini-Instanzen), Strategien nie besser als das Optimum, Rechts-Verschiebung gegen eine stundenweise ereignisdiskrete Simulation.
 - **Hellsehen:** Handfälle mit bekanntem Optimum, „Optimum ≤ jede Strategie“, Zeitlimit-Pfade (nicht bewiesen, Rückfall auf die Heuristik, unzulässiger Plan wird abgelehnt).
 - **Auswertung:** Kennzahlen, Verteilung besser/gleich/schlechter, Kipppunkt, Urteil in drei Zuständen, Kurve gegen Direktrechnungen (Szenario für Szenario).
 - **Figuren und Panels:** Geometrie des Kai-Diagramms, Hover-Raster, gemeinsame Zeitachse, Farben (nichts fast Schwarzes für das dunkle Schema), Kennzahlen-Farben am Streamlit-Proto.

@@ -35,7 +35,7 @@ def _all_runs(inst, d):
 
 # ---------------- Unabhängiges Kontrollmodell der Rechts-Verschiebung ----------------
 def control_right_shift(inst, plan, arrivals):
-    """Ereignissimulation Stunde für Stunde statt Vorgängerschleife: ein Schiff legt an, sobald (a) seine tatsächliche Ankunft und sein geplantes Fenster
+    """Ereignisdiskrete Simulation Stunde für Stunde statt Vorgängerschleife: ein Schiff legt an, sobald (a) seine tatsächliche Ankunft und sein geplantes Fenster
     erreicht sind und (b) jeder in der Planreihenfolge VOR ihm liegende, räumlich überlappende Vorgänger schon angelegt UND wieder abgelegt hat."""
     order = sorted(plan, key=lambda i: (plan[i][0], i))
     rank = {i: k for k, i in enumerate(order)}

@@ -171,7 +171,7 @@ def replan_fast(inst_eff, fixed, remaining, max_moves=C.REPLAN_MAX_MOVES):
 
 
 def run_reactive(inst, delays, expected_delay=1, max_moves=C.REPLAN_MAX_MOVES, replanner=replan_fast):
-    """Stundenweise Ereignissimulation der Neuplanung. Bekannt zur Zeit tau: alle Schiffe mit tatsächlicher Ankunft <= tau.
+    """Stundenweise ereignisdiskrete Simulation der Neuplanung. Bekannt zur Zeit tau: alle Schiffe mit tatsächlicher Ankunft <= tau.
     `expected_delay` (r >= 1): noch nicht angekommene Schiffe werden ab max(ETA, tau + r) eingeplant; r = 1 ist "nur die ETA" (keine Prognose).
     `replanner(inst_eff, fixed, remaining, max_moves)` ist austauschbar (Tests prüfen darüber die Invarianten je Ereignis)."""
     if expected_delay < 1:

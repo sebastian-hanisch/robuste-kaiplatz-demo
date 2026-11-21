@@ -1,7 +1,7 @@
 """Unabhängige Orakel (anderer Rechenweg als der Demo-Code), klein und schnell.
 
 * Hellsehen: vollständige Aufzählung (Reihenfolge, Position, frühester Start) auf Mini-Instanzen statt CP-SAT.
-* Rechts-Verschiebung: stundenweise Ereignissimulation statt der Vorgängerschleife aus `rb_execution`.
+* Rechts-Verschiebung: stundenweise ereignisdiskrete Simulation statt der Vorgängerschleife aus `rb_execution`.
 """
 
 import random
